@@ -1,8 +1,8 @@
 package others;
 
 public abstract class Vector3D implements Algebra {
-    protected Vector2D vector2d;
-    protected double z;
+    public Vector2D vector2d;
+    public double z;
 
     public Vector3D(Vector2D vector2d) {
         this.vector2d = vector2d;

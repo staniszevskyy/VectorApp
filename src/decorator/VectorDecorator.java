@@ -1,7 +1,7 @@
 package decorator;
 
-import others.Vector2D;
-import others.Vector3D;
+
+import others.*;
 
 public class VectorDecorator extends Vector3D {
 

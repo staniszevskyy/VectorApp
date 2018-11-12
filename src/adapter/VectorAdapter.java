@@ -25,13 +25,14 @@ public class VectorAdapter implements Algebra {
         return Math.toDegrees(Math.atan(angle));
     }
 
-    @Override
-    public double ab() {
-        return vector2D.ab();
+
+    public double ab(){
+        return Math.sqrt(Math.pow(vector2D.getX(), 2) + Math.pow(vector2D.getY(),2));
     }
+
 
     @Override
     public String toString() {
-        return vector2D+ " Angle: " + getAngle() + " , length: " + getVector2D().ab();
+        return vector2D+ " Angle: " + getAngle() + " , length: " + ab();
     }
 }
